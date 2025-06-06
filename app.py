@@ -34,7 +34,6 @@ if st.button("Download Playlist"):
 
         playlist_path = os.path.join(DOWNLOAD_DIR, playlist_title)
         zip_file = shutil.make_archive(playlist_path, 'zip', playlist_path)
-
         if tmp_cookie_path:
             os.remove(tmp_cookie_path)
 
