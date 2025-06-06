@@ -24,7 +24,12 @@ if st.button("Download Playlist"):
             'merge_output_format': 'mp4',
             'outtmpl': os.path.join(DOWNLOAD_DIR, '%(playlist_title)s/%(title)s.%(ext)s'),
             'ignoreerrors': True,
-            'nocheckcertificate': True
+            'nocheckcertificate': True,
+            'ffmpeg_location': shutil.which('ffmpeg') or 'ffmpeg',
+            'postprocessors': [{
+                'key': 'FFmpegMerger',
+                'preferredcodec': 'mp4'
+            }]
         }
         tmp_cookie_path = None
         if cookie_file is not None:
