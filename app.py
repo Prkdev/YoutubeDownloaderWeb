@@ -27,8 +27,8 @@ if st.button("Download Playlist"):
             'nocheckcertificate': True,
             'ffmpeg_location': shutil.which('ffmpeg') or 'ffmpeg',
             'postprocessors': [{
-                'key': 'FFmpegMerger',
-                'preferredcodec': 'mp4'
+                'key': 'FFmpegVideoConvertor',
+                'preferedformat': 'mp4'
             }]
         }
         tmp_cookie_path = None

@@ -10,7 +10,10 @@ This simple Streamlit app allows you to download every video from a YouTube play
 pip install -r requirements.txt
 ```
 
-2. Run the app:
+2. Make sure `ffmpeg` is installed and available in your `PATH`.
+
+3. Run the app:
+
 
 ```bash
 streamlit run app.py
