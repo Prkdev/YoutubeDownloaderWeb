@@ -20,4 +20,5 @@ streamlit run app.py
 
 1. Enter a YouTube playlist URL.
 2. (Optional) Upload a `cookies.txt` file if the playlist requires login.
-3. Press **Download Playlist** to download all videos. Files are saved inside the `downloads` folder.
+3. Press **Download Playlist** to download all videos. After the download finishes a zip archive of the playlist is created and a **Download ZIP** button will appear allowing you to save it locally.
+
